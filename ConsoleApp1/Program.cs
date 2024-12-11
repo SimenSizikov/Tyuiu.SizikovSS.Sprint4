@@ -4,14 +4,14 @@
     {
         static void Main(string[] args)
         {
-            int[] array = new int[] { 2, 4, 3, 7, 5, 9 };
-            int s = int.MaxValue;
+            int[] array = new int[] {  5, 7, 5, 9, 2, 3 };
+            int m = 0;
             for (int i = 0; i < array.Length; i++)
             {
-                if (array[i] % 2 != 0 && array[i] < s)
-                    s= array[i];
+                if (array[i] % 2 != 0)
+                    m += array[i];
             }
-            Console.WriteLine(s);
+            Console.WriteLine(m);
         }
     }
 }
