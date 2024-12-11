@@ -6,7 +6,7 @@ namespace Tyuiu.SizikovSS.Sprint4.Task1.V29.Lib
     {
         public int Calculate(int[] array)
         {
-            int p = 1;
+            int p = 0;
             if (array.Length == 0) return 0;
             for (int i = 0; i < array.Length; i++)
             {
