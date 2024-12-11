@@ -42,7 +42,7 @@ namespace Tyuiu.SizikovSS.Sprint4.Task3.V15
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Минимальный элемент в последнем столбце: " + ds.Calculate(mass));
+            Console.WriteLine("Количество нечетных элементов во всем массиве: " + ds.Calculate(mass));
 
             Console.ReadLine();
         }

@@ -9,8 +9,13 @@ namespace Tyuiu.SizikovSS.Sprint4.Task3.V15.Lib
             int count = 0;
             for (int i = 0; i < array.GetLength(0); i++)
             {
-                if (array[i, array.GetLength(1) - 1] % 2 != 0)
-                    count++;
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    if (array[i, j] % 2 != 0)
+                    {
+                        count++;
+                    }
+                }
             }
             return count;
         }
