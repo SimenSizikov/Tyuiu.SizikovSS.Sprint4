@@ -1,22 +1,14 @@
-﻿namespace ConsoleApp1
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace ConsoleApp1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int[,] array = new int[,] { { 8,-5, 9 }, {-8, 6,-1 }, { 7, 1, -5} };
-            int s = 0;
-            for (int i = 0; i < array.GetLength(0); i++)
-            {
-                for (int j = 0; j < array.GetLength(1); j++)
-                {
-                    if (array[i, j] < 0)
-                    {
-                        s+= array[i, j];
-                    }
-                }
-            }
-            Console.WriteLine(s);
+            string[] words = new string[] { "Программирование", "Код", "Класс", "Функция" , "Массив", "Переменная" , "Структура" };
+            int count = words.Count(w => w.Length > 5);
+            Console.WriteLine(count);
         }
     }
 }
