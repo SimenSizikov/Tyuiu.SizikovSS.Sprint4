@@ -6,9 +6,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            string[] words = new string[] { "Программирование", "Код", "Класс", "Функция" , "Массив", "Переменная" , "Структура" };
-            int count = words.Count(w => w.Length > 5);
-            Console.WriteLine(count);
+            string str = "548235976";
+            int[,] matrix = new int[3, 3];
+            int sum = 0;
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    matrix[i, j] = int.Parse(str[i * 3 + j].ToString());
+                    if (i == 0)
+                    {
+                        sum += matrix[i, j];
+                    }
+                }
+            }
+            Console.WriteLine(sum);
         }
     }
 }
